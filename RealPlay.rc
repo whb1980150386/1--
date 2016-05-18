@@ -1,0 +1,349 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(简体，中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\RealPlay.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\RealPlay.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 RealPlay"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "RealPlay 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2009",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_REALPLAY_DIALOG DIALOGEX 0, 0, 829, 462
+STYLE DS_SETFONT | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "  "
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    CONTROL         "IPAddress1",IDC_IPADDRESS_DEV,"SysIPAddress32",WS_TABSTOP,51,13,73,13
+    EDITTEXT        IDC_EDIT_PORT,161,13,41,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_USER,246,14,52,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PWD,359,15,45,13,ES_PASSWORD | ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Login",IDC_BUTTON_LOGIN,467,13,33,19
+    PUSHBUTTON      "左",IDC_BTN_PTZ_LEFT,406,59,20,13,BS_FLAT
+    PUSHBUTTON      "下",IDC_BTN_PTZ_DOWN,434,75,20,13,BS_FLAT
+    PUSHBUTTON      "上",IDC_BTN_PTZ_UP,434,43,20,13,BS_FLAT
+    PUSHBUTTON      "右",IDC_BTN_PTZ_RIGHT,462,61,20,13,BS_FLAT
+    LTEXT           "调焦",IDC_STATIC6,436,97,17,10
+    LTEXT           "聚焦",IDC_STATIC7,436,109,17,10
+    LTEXT           "光圈",IDC_STATIC8,436,123,17,10
+    PUSHBUTTON      "缩",IDC_BTN_ZOOM_IN,406,93,20,13,BS_FLAT
+    PUSHBUTTON      "近",IDC_BTN_FOCUS_NEAR,406,107,20,13,BS_FLAT
+    PUSHBUTTON      "大",IDC_BTN_IRIS_OPEN,406,121,20,13,BS_FLAT
+    PUSHBUTTON      "伸",IDC_BTN_ZOOM_OUT,462,93,20,13,BS_FLAT
+    PUSHBUTTON      "远",IDC_BTN_FOCUS_FAR,462,107,20,13,BS_FLAT
+    PUSHBUTTON      "小",IDC_BTN_IRIS_CLOSE,462,121,20,13,BS_FLAT
+    DEFPUSHBUTTON   "播放",IDC_BUTTON_PLAY,30,411,41,21
+    DEFPUSHBUTTON   "录像",IDC_BUTTON_RECORD,92,411,41,21
+    CONTROL         "Tree1",IDC_TREE_CHAN,"SysTreeView32",TVS_HASBUTTONS | TVS_HASLINES | TVS_SHOWSELALWAYS | WS_BORDER | WS_HSCROLL | WS_TABSTOP,6,44,76,236
+    COMBOBOX        IDC_COMBO_PTZ_SPEED,442,161,48,78,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "抓图",IDC_BUTTON_CAPTURE,153,411,41,21
+    COMBOBOX        IDC_COMBO_PRESET,402,201,28,87,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "调用",IDC_BUTTON_PRESET_GOTO,434,201,18,14
+    PUSHBUTTON      "设置",IDC_BUTTON_PRESET_SET,452,201,18,14
+    PUSHBUTTON      "删除",IDC_BUTTON_PRESET_DEL,472,201,18,14
+    COMBOBOX        IDC_COMBO_SEQ,402,237,32,93,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "调用",IDC_BUTTON_SEQ_GOTO,442,235,21,14
+    PUSHBUTTON      "设置",IDC_BUTTON_SEQ_SET,466,235,21,14
+    PUSHBUTTON      "开始",IDC_BUTTON_TRACK_START,404,283,29,16
+    PUSHBUTTON      "停止",IDC_BUTTON_TRACK_STOP,436,283,29,16
+    PUSHBUTTON      "运行",IDC_BUTTON_TRACK_RUN,467,283,29,16
+    PUSHBUTTON      "左上",IDC_BTN_PTZ_UPLEFT,406,43,20,13,BS_FLAT
+    PUSHBUTTON      "右上",IDC_BTN_PTZ_UPRIGHT,462,43,20,13,BS_FLAT
+    PUSHBUTTON      "左下",IDC_BTN_PTZ_DOWNLEFT,406,75,20,13,BS_FLAT
+    PUSHBUTTON      "右下",IDC_BTN_PTZ_DOWNRIGHT,462,75,20,13,BS_FLAT
+    PUSHBUTTON      "自动",IDC_BTN_PTZ_AUTO,434,61,20,13,BS_FLAT
+    COMBOBOX        IDC_COMBO_PIC_TYPE,221,421,50,35,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_JPG_SIZE,298,421,35,77,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_JPG_QUALITY,341,421,35,43,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",IDC_STATIC_PLAY2,"Static",SS_BLACKFRAME,536,61,229,184
+    EDITTEXT        IDC_EDIT2_point,601,349,186,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "复位",IDC_BUTTON1,609,24,50,14
+    CONTROL         "",IDC_STATIC_PLAY,"Static",SS_BLACKFRAME,97,42,261,212
+    DEFPUSHBUTTON   "录像",IDC_BUTTON2,689,21,50,14
+    EDITTEXT        IDC_EDIT1_IP,14,13,34,12,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY | WS_DISABLED | NOT WS_BORDER
+    EDITTEXT        IDC_EDIT1_IP2_Port,128,13,34,12,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY | WS_DISABLED | NOT WS_BORDER
+    EDITTEXT        IDC_EDIT1_IP2_User,210,14,34,12,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY | WS_DISABLED | NOT WS_BORDER
+    EDITTEXT        IDC_EDIT1_IP2_Pwd,319,16,34,12,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY | WS_DISABLED | NOT WS_BORDER
+    EDITTEXT        IDC_EDIT1_IP2_Speed,398,163,34,12,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY | WS_DISABLED | NOT WS_BORDER
+    EDITTEXT        IDC_EDIT1_IP2_Notes,402,267,34,12,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY | WS_DISABLED | NOT WS_BORDER
+    EDITTEXT        IDC_EDIT1_IP2_Preset,402,187,34,12,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY | WS_DISABLED | NOT WS_BORDER
+    EDITTEXT        IDC_EDIT1_IP2_Route,402,223,34,12,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY | WS_DISABLED | NOT WS_BORDER
+    EDITTEXT        IDC_EDIT1_IP2_JEPG,290,403,47,12,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY | WS_DISABLED | NOT WS_BORDER
+    PUSHBUTTON      "test输出信息",IDC_BUTTON3,602,392,50,14
+END
+
+IDD_DLG_PTZ_CRUISE DIALOG 0, 0, 285, 92
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "添加巡航路径"
+FONT 9, "宋体"
+BEGIN
+    LTEXT           "巡航路径",IDC_STATIC_CRUISE,21,15,50,9
+    COMBOBOX        IDC_COMBO_CRUISE_ROUTE,89,13,90,189,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "添加巡航点",IDC_BUTTON_ADD,87,58,60,15
+    PUSHBUTTON      "删除巡航点",IDC_BUTTON_DEL,161,58,60,15
+    COMBOBOX        IDC_COMBO_CRUISE_POINT,51,37,28,109,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "",IDC_STATIC,13,29,258,27
+    LTEXT           "巡航点",IDC_STATIC,21,39,24,13
+    COMBOBOX        IDC_COMBO_CRUISE_PRESET,115,37,28,121,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "预置点",IDC_STATIC,87,39,24,13
+    COMBOBOX        IDC_COMBO_CRUISE_TIME,183,37,28,113,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "时间(sec)",IDC_STATIC,145,39,38,13
+    COMBOBOX        IDC_COMBO_CRUISE_SPEED,239,37,28,123,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "速度",IDC_STATIC,213,39,24,13
+    PUSHBUTTON      "退出",IDC_BTN_EXIT,227,58,39,15
+END
+
+IDD_DIALOG1 DIALOGEX 0, 0, 535, 274
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "FileDescription", "RealPlay Microsoft 基础类应用程序"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "RealPlay"
+            VALUE "LegalCopyright", "版权所有 (C) 2009"
+            VALUE "OriginalFilename", "RealPlay.EXE"
+            VALUE "ProductName", "RealPlay 应用程序"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_REALPLAY_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 822
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 461
+    END
+
+    IDD_DLG_PTZ_CRUISE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 278
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 85
+    END
+
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 528
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 267
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_REALPLAY_DIALOG DLGINIT
+BEGIN
+    IDC_COMBO_PTZ_SPEED, 0x403, 5, 0
+0xacc4, 0xcfc8, "\000" 
+    IDC_COMBO_PTZ_SPEED, 0x403, 2, 0
+0x0031, 
+    IDC_COMBO_PTZ_SPEED, 0x403, 2, 0
+0x0032, 
+    IDC_COMBO_PTZ_SPEED, 0x403, 2, 0
+0x0033, 
+    IDC_COMBO_PTZ_SPEED, 0x403, 2, 0
+0x0034, 
+    IDC_COMBO_PTZ_SPEED, 0x403, 2, 0
+0x0035, 
+    IDC_COMBO_PTZ_SPEED, 0x403, 2, 0
+0x0036, 
+    IDC_COMBO_PTZ_SPEED, 0x403, 2, 0
+0x0037, 
+    IDC_COMBO_PIC_TYPE, 0x403, 9, 0
+0x504a, 0x4745, 0xbccd, 0xacc6, "\000" 
+    IDC_COMBO_PIC_TYPE, 0x403, 8, 0
+0x4d42, 0xcd50, 0xc6bc, 0x00ac, 
+    IDC_COMBO_JPG_SIZE, 0x403, 4, 0
+0x4943, 0x0046, 
+    IDC_COMBO_JPG_SIZE, 0x403, 5, 0
+0x4351, 0x4649, "\000" 
+    IDC_COMBO_JPG_SIZE, 0x403, 3, 0
+0x3144, "\000" 
+    IDC_COMBO_JPG_SIZE, 0x403, 5, 0
+0x5855, 0x4147, "\000" 
+    IDC_COMBO_JPG_SIZE, 0x403, 5, 0
+0x5653, 0x4147, "\000" 
+    IDC_COMBO_JPG_SIZE, 0x403, 7, 0
+0x4448, 0x3237, 0x7030, "\000" 
+    IDC_COMBO_JPG_SIZE, 0x403, 4, 0
+0x4756, 0x0041, 
+    IDC_COMBO_JPG_SIZE, 0x403, 5, 0
+0x5658, 0x4147, "\000" 
+    IDC_COMBO_JPG_SIZE, 0x403, 7, 0
+0x4448, 0x3039, 0x7030, "\000" 
+    IDC_COMBO_JPG_QUALITY, 0x403, 5, 0
+0xeed7, 0xc3ba, "\000" 
+    IDC_COMBO_JPG_QUALITY, 0x403, 5, 0
+0xcfbd, 0xc3ba, "\000" 
+    IDC_COMBO_JPG_QUALITY, 0x403, 5, 0
+0xbbd2, 0xe3b0, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_ABOUTBOX            "关于 RealPlay(&A)..."
+END
+
+#endif    // 中文(简体，中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\RealPlay.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
