@@ -2054,7 +2054,7 @@ void CRealPlayDlg::OnSize(UINT nType, int cx, int cy)
 	//	//判断最大化  最小化  是否改变控件
 	//	if (!this->IsIconic() && !this->IsZoomed())
 	//	{
-			ReSize();   
+			ReSize();     
 			
 	/*	}       
 	}*/
