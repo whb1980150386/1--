@@ -2050,7 +2050,7 @@ void CRealPlayDlg::OnSize(UINT nType, int cx, int cy)
 	CDialog::OnSize(nType, cx, cy);
 	
 	//if (AUTOSIZE == TRUE)
-	//{
+	//{    
 	//	//判断最大化  最小化  是否改变控件
 	//	if (!this->IsIconic() && !this->IsZoomed())
 	//	{
@@ -2058,7 +2058,7 @@ void CRealPlayDlg::OnSize(UINT nType, int cx, int cy)
 			
 	/*	}
 	}*/
-	
+	//sadsa
 	
 	// TODO:  在此处添加消息处理程序代码
 }

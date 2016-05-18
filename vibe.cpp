@@ -91,7 +91,7 @@ void ViBe_BGS::testAndUpdate(const Mat _image)
 					matches++;
 				count++;
 			}
-
+		
 			if (matches >= MIN_MATCHES)//#min 最小交集符合要求  
 			{
 				// It is a background pixel  
