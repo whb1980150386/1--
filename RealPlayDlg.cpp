@@ -2056,7 +2056,7 @@ void CRealPlayDlg::OnSize(UINT nType, int cx, int cy)
 	//	{
 			ReSize();
 			
-	/*	}
+	/*	}    
 	}*/
 	
 	// TODO:  在此处添加消息处理程序代码
